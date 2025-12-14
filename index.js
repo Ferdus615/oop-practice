@@ -20,10 +20,16 @@ function Circle(radius) {
   };
 }
 
-Circle.call({}, 1);
-Circle.apply({}, [1, 2, 3]);
+//==============================================
+// Circle.call({}, 1);
+// const obj = {};
+// const anotherCircle = Circle.call(obj, 1);
+// obj.draw();
 
-const anotherCircle = new Circle(1);
+// Circle.apply({}, [1, 2, 3]);
+//==============================================
+
+// const anotherCircle = new Circle(1);
 // anotherCircle.draw();
 
 // const Circle1 = new Function(

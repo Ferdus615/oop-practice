@@ -17,21 +17,26 @@ function factory(radius, hVal) {
 
 const demo = factory(3, 9);
 
-demo.log();
-demo.calculate();
+// demo.log();
+// demo.calculate();
 
 // ================================================================================================
 
-function constructur() {
+function Constraktar(radius, height) {
   this.radius = radius;
   this.height = height;
 
-  this.log = fucntion() {
-      console.log(`This is the method of the factory function!`);
-  }
+  this.log = function () {
+    console.log(`This is the method of the Condtructor function!`);
+  };
 
-  this.log = function() {
-    let result = this.result * this.height;
-  }
+  this.calculate = function () {
+    let result = this.radius * this.height;
+    console.log(result);
+  };
 }
 
+const test = new Constraktar(3, 7);
+
+test.log();
+test.calculate();

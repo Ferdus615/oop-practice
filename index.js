@@ -44,24 +44,6 @@ function Circle(radius) {
 // const circle2 = new Circle1(1);
 // circle2.draw();
 
-// factory function practice - 1
-function factory(radius, hVal) {
-  return {
-    radius: radius,
-    height: hVal,
 
-    log: function () {
-      console.log(`This is the method of the factory function!`);
-    },
 
-    calculate: function () {
-      let result = radius * hVal;
-      console.log(`Result: ${result}`);
-    },
-  };
-}
 
-const demo = factory(3, 9);
-
-demo.log();
-demo.calculate();
